@@ -36,9 +36,12 @@
 
                 <div class="row small">
                     <div class="col text-center">
-                        <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
-                            {{ site.data.profile.email | replace: "@", "(at)" }}
+                        {% for email in site.data.profile.emails %}
+                        <a class="email-text" href="mailto:{{ email | encode_email }}">
+                            {{ email | replace: "@", "(at)" }}
                         </a>
+                        {% unless forloop.last %}<br/>{% endunless %}
+                        {% endfor %}
                     </div>
                 </div>
 
@@ -55,8 +58,14 @@
                         </a>
                         {% endif %}
                         
+                        {% if site.data.profile.cv_link %}
+                        <a class="px-1 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.cv_link | relative_url }}" title="Resume" aria-label="Resume">
+                            <i class="fas fa-file-lines"></i>
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.github %}
-                        <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                        <a class="px-1 no-break" target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.data.profile.github }}" title="GitHub" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         {% endif %}
