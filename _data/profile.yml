@@ -11,7 +11,7 @@ positions:
 emails:
   - xiguo@uw.edu
   - im.guoxi@gmail.com
-cv_link: /assets/pdf/resume_v1.pdf
+cv_link: /assets/pdf/resume.pdf
 # gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
 github: zerocath
 # twitter: your_twitter_id  # Do not include the '@' symbol
@@ -21,7 +21,7 @@ linkedin: xiguo815
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   I'm Xi Guo, a master's student in Electrical and Computer Engineering at the University of Washington, with interests in distributed ML systems, GPU computing, and high-performance ML and AI infrastructures.
+   Hi! I'm Xi Guo, a master's student in Electrical and Computer Engineering at the University of Washington, with interests in distributed ML systems, GPU computing, and high-performance ML and AI infrastructures.
   </p>
   <p>
    Before coming to UW, I spent over two years at PDD working on large-scale training infrastructure for search and recommendation, focusing on distributed training frameworks, sparse embedding systems, and training performance optimization.
@@ -63,7 +63,9 @@ experience:
 - name: PDD Holdings
   company_url: https://investor.pddholdings.com/
   company_description: >-
-    A global e-commerce platform (Nasdaq: PDD), parent company of Pinduoduo and Temu.
+    A global e-commerce platform (Nasdaq: PDD), parent company of
+    <a href="https://en.pinduoduo.com/group" target="_blank" rel="noopener noreferrer"><strong>Pinduoduo</strong></a> and
+    <a href="https://www.temu.com/about-temu.html" target="_blank" rel="noopener noreferrer"><strong>Temu</strong></a>.
   logo: /assets/images/badges/pdd.png
   location: Shanghai, China
   position: Software Engineer, Machine Learning Infrastructure
@@ -75,7 +77,7 @@ experience:
   projects:
   - name: Scalable Training for Generative Recommendation Models
     highlights:
-    - Implemented training workflows for generative recommendation models (HSTU) with <strong>PyTorch, TorchRec, DDP, and DMP</strong> to scale <strong>billion-parameter sparse training</strong> across datasets serving <strong>300M+ DAU</strong> and multi-task objectives (recall, CTR, and CVR).
+    - Implemented training workflows for generative recommendation models (HSTU) using  <strong>PyTorch and TorchRec</strong>, integrating DDP and DMP to scale billion-parameter sparse training on  <strong>300M+ DAU </strong> datasets for multi-task workflows (recall, CTR, CVR).
     - Built a <strong>pipelined training execution framework</strong> that overlaps CPU-side data preprocessing, sparse embedding lookup, forward/backward computation, and parameter updates, increasing training throughput by <strong>40%+</strong>.
     - Optimized <strong>sparse embedding communication</strong> by deduplicating feature IDs before TorchRec embedding-table lookups, reducing all-to-all traffic and improving end-to-end throughput on <strong>32 GPUs by 25%+</strong>.
   - name: Training Framework Migration
@@ -83,7 +85,7 @@ experience:
     - Migrated a recommendation model training pipeline from <strong>TensorFlow to PyTorch</strong> on <strong>multi-node H100 clusters</strong>.
     - Integrated a custom <strong>C++ sparse Parameter Server</strong> as a CPU backend to offload massive read-only embedding tables,
       effectively bypassing <strong>GPU memory limits</strong> for memory-intensive downstream models.
-    - Re-implemented the end-to-end training lifecycle including <strong>sharded checkpointing</strong>, <strong>high-throughput data prefetching</strong>,
+    - Rebuild the end-to-end training lifecycle including <strong>sharded checkpointing</strong>, <strong>high-throughput data prefetching</strong>,
       and cross-framework consistency checks to match existing training workflows.
     - Optimized training efficiency through data prefetching and CPU–GPU coordination, leading to <strong>30%+ higher GPU
       utilization</strong> and <strong>15% faster training</strong> compared to the legacy TensorFlow system.
