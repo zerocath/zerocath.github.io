@@ -22,7 +22,8 @@
                 </div>
                 <div class="row">
                     <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                        {{ site.data.profile.primary_name }}{% if site.data.profile.secondary_name %}
+                        <small>{{ site.data.profile.secondary_name }}</small>{% endif %}
                     </div>
                 </div>
 

@@ -5,12 +5,12 @@ navbar_title: Home (Layout 2)
 ---
 {% include widgets/profile_card.html %}
 
-{% if site.data.display.homepage.show_education and site.data.profile.education %}
-    {% include widgets/education_card.html %}
-{% endif %}
-
 {% if site.data.display.homepage.show_experience and site.data.profile.experience %}
     {% include widgets/experience_card.html %}
+{% endif %}
+
+{% if site.data.display.homepage.show_education and site.data.profile.education %}
+    {% include widgets/education_card.html %}
 {% endif %}
 
 {% if site.data.display.homepage.show_awards and site.data.profile.awards %}
