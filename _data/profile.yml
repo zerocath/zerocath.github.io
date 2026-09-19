@@ -21,14 +21,14 @@ linkedin: xiguo815
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   Machine Learning Infrastructure Engineer with 2+ years in industry, focused on large scale distributed training systems.
+   I'm Xi Guo, a master's student in Electrical and Computer Engineering at the University of Washington, with interests in distributed ML systems, GPU computing, and high-performance ML and AI infrastructures.
   </p>
   <p>
-   Experienced in building and optimizing distributed training frameworks, improving scalability, efficiency, and reliability.
+   Before coming to UW, I spent over two years at PDD working on large-scale training infrastructure for search and recommendation, focusing on distributed training frameworks, sparse embedding systems, and training performance optimization.
+   I received my Bachelor's degree in Computer Science from Huazhong University of Science and Technology in 2023.
   </p>
   <p>
-   Interested in ML systems design and infrastructure that enable models to work effectively at scale.
-  </p>
+   I'm a software engineer interested in ML systems design and infrastructure that enable models to work effectively at scale, and I'm actively looking for 2027 summer SDE & MLE internship opportunities.
 
 portrait_url: /assets/images/photos/gx.png
 # portrait_caption: >-
@@ -37,14 +37,14 @@ portrait_url: /assets/images/photos/gx.png
 education:
 - name: University of Washington
   logo: /assets/images/badges/uw.png
-  position: M.S. in Electrical andComputer Engineering
+  position: M.S. in Electrical and Computer Engineering
   date: Sep. 2026 - present
   # position: >-
   #   Department of Electrical Engineering and Computer Science <br/>
   #   M.S. Student
 - name: Huazhong University of Science and Technology
   logo: /assets/images/badges/hust.png
-  position: B.Eng. in Computer Science
+  position: B.Eng. in Computer Science and Technology
   date: Sep. 2019 - Jun. 2023
 
 # Professional Experience:
@@ -60,8 +60,8 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 experience:
-- name: PDD Holdings (Pinduoduo & Temu)
-  company_url: https://www.pddholdings.com/
+- name: PDD Holdings
+  company_url: https://investor.pddholdings.com/
   company_description: >-
     A global e-commerce platform (Nasdaq: PDD), parent company of Pinduoduo and Temu.
   logo: /assets/images/badges/pdd.png
@@ -69,8 +69,9 @@ experience:
   position: Software Engineer, Machine Learning Infrastructure
   date: Jul. 2023 - Nov. 2025
   summary:
-  - Built distributed training infrastructure for large-scale recommendation models across multi-node GPU clusters.
-  - Focused on PyTorch migration, sparse embedding systems, and pipeline optimizations that improved throughput and GPU utilization.
+  - Worked on offline training infrastructure for search and recommendation models powering a large-scale e-commerce platform.
+  - Focused on distributed training frameworks and end-to-end training performance optimization, improving the efficiency and scalability of production model training.
+  - Collaborated closely with algorithm teams to support model development, optimize training workflows, and diagnose model and training-system issues.
   projects:
   - name: Scalable Training for Generative Recommendation Models
     highlights:
@@ -109,13 +110,12 @@ experience:
   company_url: https://www.sensetime.com/en/
   logo: /assets/images/badges/sensetime.png
   company_description: >-
-    SenseTime is an artificial intelligence software company developing AI technologies, platforms, and applications.
+    An artificial intelligence software company developing AI technologies, platforms, and applications.
   location: Shanghai, China
   position: Software Engineer Intern
   date: Jul. 2022 - Sep. 2022
   summary:
-  - Built and maintained backend microservices for an internal AI training platform.
-  - Supported model training, job scheduling, deployment workflows, and platform APIs.
+  - Worked on backend and infrastructure for an enterprise deep learning platform, supporting end-to-end model training and deployment workflows.
   highlights:
   - Developed Golang (Gin) backend services and REST APIs for an enterprise deep learning platform, supporting algorithm management, training workflows, and access control.
   - Developed and maintained Helm-based deployment workflows for Kubernetes services and training jobs, including chart validation, environment configuration, and release deployment.
