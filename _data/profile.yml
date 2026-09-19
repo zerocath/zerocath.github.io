@@ -79,6 +79,15 @@ experience:
     - Optimized sparse embedding communication by deduplicating feature IDs before TorchRec embedding-table lookups, reducing all-to-all traffic and improving end-to-end throughput on 32 GPUs by 25%+.
   - name: Training Framework Migration
     highlights:
+    - Migrated a recommendation model training pipeline from TensorFlow to PyTorch on multi-node H100 clusters.
+    - Integrated custom C++ sparse Parameter Server as a CPU backend to offload massive read-only embedding tables,
+      effectively bypassing GPU memory limits for memory-intensive downstream models.
+    - Re-implemented the end-to-end training lifecycle including sharded checkpointing, high-throughput data prefetching,
+      and cross-framework consistency checks, to match existing training workflows.
+    - Optimized training efficiency through data prefetching and CPU–GPU coordination, leading to 30%+ higher GPU
+      utilization and 15% faster training compared to the legacy TF system.
+  - name: Semi-Synchronous Training Mechanism
+    highlights:
     - Extended SyncReplicaOptimizer(TensorFlow v1.0) with a semi-synchronous mechanism, enabling non-blocking worker execution without blocking to improve system throughput while preserving convergence stability.
     - Implemented token-based gradient admission and staleness control on the parameter server to aggregate gradients at a fixed global batch size while filtering stale updates.
     - Improved 60%+ training throughput over native synchronous training on recommendation CVR model, reaching 85% of asynchronous efficiency with +0.3% AUC improvement.
