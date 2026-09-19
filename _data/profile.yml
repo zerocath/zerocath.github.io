@@ -75,35 +75,35 @@ experience:
   projects:
   - name: Scalable Training for Generative Recommendation Models
     highlights:
-    - Implemented training workflows for generative recommendation models (HSTU) with PyTorch and TorchRec, integrating DDP and DMP to scale billion-parameter sparse training across datasets serving 300M+ DAU and multi-task objectives (recall, CTR, and CVR).
-    - Built a pipelined training execution framework that overlaps CPU-side data preprocessing, sparse embedding lookup, forward/backward computation, and parameter updates, increasing training throughput by 40%+.
-    - Optimized sparse embedding communication by deduplicating feature IDs before TorchRec embedding-table lookups, reducing all-to-all traffic and improving end-to-end throughput on 32 GPUs by 25%+.
+    - Implemented training workflows for generative recommendation models (HSTU) with <strong>PyTorch, TorchRec, DDP, and DMP</strong> to scale <strong>billion-parameter sparse training</strong> across datasets serving <strong>300M+ DAU</strong> and multi-task objectives (recall, CTR, and CVR).
+    - Built a <strong>pipelined training execution framework</strong> that overlaps CPU-side data preprocessing, sparse embedding lookup, forward/backward computation, and parameter updates, increasing training throughput by <strong>40%+</strong>.
+    - Optimized <strong>sparse embedding communication</strong> by deduplicating feature IDs before TorchRec embedding-table lookups, reducing all-to-all traffic and improving end-to-end throughput on <strong>32 GPUs by 25%+</strong>.
   - name: Training Framework Migration
     highlights:
-    - Migrated a recommendation model training pipeline from TensorFlow to PyTorch on multi-node H100 clusters.
-    - Integrated custom C++ sparse Parameter Server as a CPU backend to offload massive read-only embedding tables,
-      effectively bypassing GPU memory limits for memory-intensive downstream models.
-    - Re-implemented the end-to-end training lifecycle including sharded checkpointing, high-throughput data prefetching,
-      and cross-framework consistency checks, to match existing training workflows.
-    - Optimized training efficiency through data prefetching and CPU–GPU coordination, leading to 30%+ higher GPU
-      utilization and 15% faster training compared to the legacy TF system.
+    - Migrated a recommendation model training pipeline from <strong>TensorFlow to PyTorch</strong> on <strong>multi-node H100 clusters</strong>.
+    - Integrated a custom <strong>C++ sparse Parameter Server</strong> as a CPU backend to offload massive read-only embedding tables,
+      effectively bypassing <strong>GPU memory limits</strong> for memory-intensive downstream models.
+    - Re-implemented the end-to-end training lifecycle including <strong>sharded checkpointing</strong>, <strong>high-throughput data prefetching</strong>,
+      and cross-framework consistency checks to match existing training workflows.
+    - Optimized training efficiency through data prefetching and CPU–GPU coordination, leading to <strong>30%+ higher GPU
+      utilization</strong> and <strong>15% faster training</strong> compared to the legacy TensorFlow system.
   - name: Semi-Synchronous Training Mechanism
     highlights:
-    - Extended SyncReplicaOptimizer(TensorFlow v1.0) with a semi-synchronous mechanism, enabling non-blocking worker execution without blocking to improve system throughput while preserving convergence stability.
-    - Implemented token-based gradient admission and staleness control on the parameter server to aggregate gradients at a fixed global batch size while filtering stale updates.
-    - Improved 60%+ training throughput over native synchronous training on recommendation CVR model, reaching 85% of asynchronous efficiency with +0.3% AUC improvement.
-    - Supported parameter-level update strategies via TensorFlow graph modifications to meet model-specific requirements.
+    - Extended <strong>SyncReplicaOptimizer (TensorFlow v1.0)</strong> with a <strong>semi-synchronous mechanism</strong>, enabling non-blocking worker execution to improve system throughput while preserving convergence stability.
+    - Implemented <strong>token-based gradient admission</strong> and <strong>staleness control</strong> on the parameter server to aggregate gradients at a fixed global batch size while filtering stale updates.
+    - Improved training throughput by <strong>60%+</strong> over native synchronous training on a recommendation CVR model, reaching <strong>85% of asynchronous efficiency</strong> with a <strong>+0.3% AUC improvement</strong>.
+    - Supported parameter-level update strategies via <strong>TensorFlow graph modifications</strong> to meet model-specific requirements.
   - name: Distributed Training Coordination System
     highlights:
-    - Designed a coordination mechanism for multi-node startup synchronization and runtime metadata distribution.
-    - Implemented leader election (Zookeeper + CAS) to assign a primary worker which handles code distribution and
+    - Designed a coordination mechanism for <strong>multi-node startup synchronization</strong> and runtime metadata distribution.
+    - Implemented <strong>leader election (ZooKeeper + CAS)</strong> to assign a primary worker which handles code distribution and
       cluster metadata collection, eliminating external dependencies during job startup.
-    - Coordinated worker readiness and generated distributed configurations to enable reliable cluster bring-up.
+    - Coordinated worker readiness and generated <strong>distributed configurations</strong> to enable reliable cluster bring-up.
   - name: Machine Learning Platform Backend
     highlights:
-    - Contributed to backend development of ML platform, supporting task submission, scheduling, and monitoring.
-    - Developed RESTful APIs (Python/Java) for training jobs, resource management, and user access control.
-    - Unified inconsistent API endpoints across services by implementing a proxy-based routing layer, and validated con-
+    - Contributed to backend development of an <strong>ML platform</strong>, supporting task submission, scheduling, and monitoring.
+    - Developed <strong>RESTful APIs (Python/Java)</strong> for training jobs, resource management, and user access control.
+    - Unified inconsistent API endpoints across services by implementing a <strong>proxy-based routing layer</strong>, and validated
       consistency by comparing proxy and direct API responses in production.
 
 - name: SenseTime
@@ -117,10 +117,10 @@ experience:
   summary:
   - Worked on backend and infrastructure for an enterprise deep learning platform, supporting end-to-end model training and deployment workflows.
   highlights:
-  - Developed Golang (Gin) backend services and REST APIs for an enterprise deep learning platform, supporting algorithm management, training workflows, and access control.
-  - Developed and maintained Helm-based deployment workflows for Kubernetes services and training jobs, including chart validation, environment configuration, and release deployment.
-  - Integrated pretrained models and training pipelines into the platform, implementing model configuration validation
-    and supporting model artifact management with object storage.
+  - Developed <strong>Golang (Gin)</strong> backend services and <strong>REST APIs</strong> for an enterprise deep learning platform, supporting algorithm management, training workflows, and access control.
+  - Developed and maintained <strong>Helm-based deployment workflows</strong> for <strong>Kubernetes</strong> services and training jobs, including chart validation, environment configuration, and release deployment.
+  - Integrated <strong>pretrained models and training pipelines</strong> into the platform, implementing model configuration validation
+    and supporting model artifact management with <strong>object storage</strong>.
 # awards:
 # - name: Award Name 2
 #   date: 2024
