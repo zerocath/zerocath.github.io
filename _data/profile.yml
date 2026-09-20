@@ -21,14 +21,14 @@ linkedin: xiguo815
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   Hi! I'm Xi Guo, a master's student in Electrical and Computer Engineering at the University of Washington, with interests in distributed ML systems, GPU computing, and high-performance ML and AI infrastructures.
+   Hi! I'm Xi Guo, a software engineer and master's student in Electrical and Computer Engineering at the University of Washington. I'm interested in distributed ML systems, GPU computing, and high-performance ML and AI infrastructures.
   </p>
   <p>
-   Before coming to UW, I spent over two years at PDD working on large-scale training infrastructure for search and recommendation, focusing on distributed training frameworks, sparse embedding systems, and training performance optimization.
+   Before coming to UW, I spent over two years at PDD building large-scale training infrastructure for search and recommendation systems, focusing on distributed training frameworks, sparse embedding systems, and training performance optimization.
    I received my Bachelor's degree in Computer Science from Huazhong University of Science and Technology in 2023.
   </p>
   <p>
-   I'm a software engineer interested in ML systems design and infrastructure that enable models to work effectively at scale, and I'm actively looking for 2027 summer SDE & MLE internship opportunities.
+   I enjoy working at the intersection of machine learning and systems, with a particular interest in making large-scale ML workloads faster and more scalable, and I'm actively looking for 2027 summer SDE & MLE internship opportunities.
 
 portrait_url: /assets/images/photos/gx.png
 # portrait_caption: >-
@@ -71,9 +71,7 @@ experience:
   position: Software Engineer, Machine Learning Infrastructure
   date: Jul. 2023 - Nov. 2025
   summary:
-  - Worked on offline training infrastructure for search and recommendation models powering a large-scale e-commerce platform.
-  - Focused on distributed training frameworks and end-to-end training performance optimization, improving the efficiency and scalability of production model training.
-  - Collaborated closely with algorithm teams to support model development, optimize training workflows, and diagnose model and training-system issues.
+  - I worked on offline training infrastructure for Pinduoduo's e-commerce search and recommendation systems, serving 800M+ users. My work focused on distributed training frameworks, sparse embedding systems, and end-to-end training performance optimization. I also collaborated closely with algorithm teams to improve training workflows and diagnose model and training-system issues in production.
   projects:
   - name: Scalable Training for Generative Recommendation Models
     highlights:
@@ -109,18 +107,18 @@ experience:
       consistency by comparing proxy and direct API responses in production.
 
 - name: SenseTime
-  company_url: https://www.sensetime.com/en/
+  company_url: https://www.sensetime.com/en/about
   logo: /assets/images/badges/sensetime.png
   company_description: >-
-    An artificial intelligence software company developing AI technologies, platforms, and applications.
+    An AI company (HKEX: 0020) specializing in computer vision and deep learning. 
   location: Shanghai, China
   position: Software Engineer Intern
   date: Jul. 2022 - Sep. 2022
   summary:
-  - Worked on backend and infrastructure for an enterprise deep learning platform, supporting end-to-end model training and deployment workflows.
+  - I worked on backend and infrastructure for an enterprise deep learning platform, with a focus on backend services, Kubernetes-based deployment, and model training workflows.
   highlights:
   - Developed <strong>Golang (Gin)</strong> backend services and <strong>REST APIs</strong> for an enterprise deep learning platform, supporting algorithm management, training workflows, and access control.
-  - Developed and maintained <strong>Helm-based deployment workflows</strong> for <strong>Kubernetes</strong> services and training jobs, including chart validation, environment configuration, and release deployment.
+  - Built and maintained <strong>Helm-based deployment workflows</strong> for <strong>Kubernetes</strong> services and training jobs, including chart validation, environment configuration, and release deployment.
   - Integrated <strong>pretrained models and training pipelines</strong> into the platform, implementing model configuration validation
     and supporting model artifact management with <strong>object storage</strong>.
 # awards:
