@@ -39,6 +39,10 @@ education:
   logo: /assets/images/badges/uw.png
   position: M.S. in Electrical and Computer Engineering
   date: Sep. 2026 - Jun. 2028
+  relevant_courses:
+  - Applied High-Performance GPU Computing
+  - Foundations of Deep Learning
+  - Agentic AI Deep Dive
   # position: >-
   #   Department of Electrical Engineering and Computer Science <br/>
   #   M.S. Student

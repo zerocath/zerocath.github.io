@@ -15,6 +15,12 @@
                                     <div class="mr-3">{{ item.position }}</div>
                                     <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                                 </div>
+                                {% if item.relevant_courses %}
+                                <div class="small text-muted mt-1">
+                                    <span class="font-weight-bold">Relevant Coursework:</span>
+                                    {{ item.relevant_courses | join: ", " }}
+                                </div>
+                                {% endif %}
                             </div>
                         </li>
                         {% endfor %}
