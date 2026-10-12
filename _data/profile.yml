@@ -21,14 +21,13 @@ linkedin: xiguo815
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   Hi! I'm Xi Guo, a software engineer and master's student in Electrical and Computer Engineering at the University of Washington. I'm interested in distributed ML systems, GPU computing, and high-performance ML and AI infrastructures.
+   Hi! I'm Xi Guo, a software engineer and master's student in Electrical and Computer Engineering at the University of Washington.
   </p>
   <p>
-   Before coming to UW, I spent over two years at PDD building large-scale training infrastructure for search and recommendation systems, focusing on distributed training frameworks, sparse embedding systems, and training performance optimization.
-   I received my Bachelor's degree in Computer Science from Huazhong University of Science and Technology in 2023.
+   Before coming to UW, I spent 2+ years at PDD building large-scale training infrastructure for search and recommendation systems, focusing on distributed training frameworks, sparse embedding systems, and training performance optimization.
   </p>
   <p>
-   I enjoy working at the intersection of machine learning and systems, with a particular interest in making large-scale ML workloads faster and more scalable, and I'm actively looking for 2027 summer SDE & MLE internship opportunities.
+   I'm interested in distributed ML systems, GPU computing, and high-performance ML and AI infrastructures, and I'm actively looking for 2027 summer SDE & MLE internship opportunities.
 
 portrait_url: /assets/images/photos/gx.jpg
 # portrait_caption: >-
@@ -125,6 +124,20 @@ experience:
   - Built and maintained <strong>Helm-based deployment workflows</strong> for <strong>Kubernetes</strong> services and training jobs, including chart validation, environment configuration, and release deployment.
   - Integrated <strong>pretrained models and training pipelines</strong> into the platform, implementing model configuration validation
     and supporting model artifact management with <strong>object storage</strong>.
+
+- name: Pivot Studio
+  company_url: https://github.com/Pivot-Studio
+  company_description: >-
+    A student-led technology organization building digital products and services for the university community.
+  location: Wuhan, Hubei, China · Hybrid
+  position: Back End Developer · Part-time
+  logo: /assets/images/badges/pivot.png
+  date: Oct. 2021 - Apr. 2022
+  summary:
+  - Developed and maintained backend services for <a href="https://husthole.org/" target="_blank" rel="noopener noreferrer"><strong>1037 Tree Hollow</strong></a>, an anonymous campus social platform serving thousands of students at Huazhong University of Science and Technology.
+  highlights:
+  - Built backend features and REST APIs using <strong>Go and MySQL</strong>.
+  - Supported ongoing service maintenance and refactoring to keep the platform reliable and maintainable.
 # awards:
 # - name: Award Name 2
 #   date: 2024
